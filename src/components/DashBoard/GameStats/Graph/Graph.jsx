@@ -34,21 +34,20 @@ function Graph() {
           data={chartData}
           margin={{ top: -8, right: 26.5, left: -35, bottom: 0 }}
         >
-       
-<defs>
-  <linearGradient id="blueGradient" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stopColor="rgba(15, 129, 206, 1)" />
-    <stop offset="100%" stopColor="rgba(15, 129, 206, 0.2)" />
-  </linearGradient>
-  <linearGradient id="redGradient" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stopColor="rgba(197, 45, 129, 1)" />
-    <stop offset="100%" stopColor="rgba(197, 45, 129, 0.2)" />
-  </linearGradient>
-  <linearGradient id="greenGradient" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stopColor="rgba(27, 186, 100, 1)" />
-    <stop offset="100%" stopColor="rgba(27, 186, 100, 0.2)" />
-  </linearGradient>
-</defs>
+          <defs>
+            <linearGradient id="blueGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="rgba(15, 129, 206, 1)" />
+              <stop offset="100%" stopColor="rgba(15, 129, 206, 0.2)" />
+            </linearGradient>
+            <linearGradient id="redGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="rgba(197, 45, 129, 1)" />
+              <stop offset="100%" stopColor="rgba(197, 45, 129, 0.2)" />
+            </linearGradient>
+            <linearGradient id="greenGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="rgba(27, 186, 100, 1)" />
+              <stop offset="100%" stopColor="rgba(27, 186, 100, 0.2)" />
+            </linearGradient>
+          </defs>
           <XAxis
             dataKey="date"
             tickFormatter={formatDate}
@@ -56,7 +55,16 @@ function Graph() {
           />
           <YAxis tick={{ style: Font }} />
           <CartesianGrid stroke="#333" />
-          <Tooltip contentStyle={{ background: "#242731", color: "#646464", border: "none", borderRadius: "5px",     fontFamily: "Metropolis-R", fontSize: "14px" }} />
+          <Tooltip
+            contentStyle={{
+              background: "#242731",
+              color: "#646464",
+              border: "none",
+              borderRadius: "5px",
+              fontFamily: "Metropolis-R",
+              fontSize: "14px",
+            }}
+          />
           <Area
             type="monotone"
             dataKey="blue"
@@ -78,7 +86,7 @@ function Graph() {
             dataKey="green"
             stroke="#3CDC86"
             fill="url(#greenGradient)"
-            dot={{ fill: "#3CDC86"}}
+            dot={{ fill: "#3CDC86" }}
             strokeWidth="2px"
           />
         </AreaChart>

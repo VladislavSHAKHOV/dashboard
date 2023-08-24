@@ -35,7 +35,14 @@ function Header() {
         DASHBOARD
       </StyledText>
       <Flex justify={"flex-end"} gap={"12px"} align={"center"}>
-        <Flex justify={"center"} align={"center"} background={"rgba(36, 39, 49, 1)"} radius={"40px"} width={"36px"} height={"36px"} >
+        <Flex
+          justify={"center"}
+          align={"center"}
+          background={"rgba(36, 39, 49, 1)"}
+          radius={"40px"}
+          width={"36px"}
+          height={"36px"}
+        >
           <StyledIcon src={userIcon} alt={"userIcon"} />
         </Flex>
         <StyledText size={"14px"}>Username</StyledText>

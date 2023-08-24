@@ -1,11 +1,16 @@
 import Flex from "../../../Flex/Flex";
 import { StyledText } from "../../../Header/Header";
 import { StyledIcon } from "../../../SideBarIcon/SideBarIcon";
-import arrowDownIcon from '../../../../assets/images/icon/arrow-down.svg'
+import arrowDownIcon from "../../../../assets/images/icon/arrow-down.svg";
 
 function GameStatsHeader() {
   return (
-    <Flex width={"100%"} justify={"space-between"} height={"max-content"} align={"center"}>
+    <Flex
+      width={"100%"}
+      justify={"space-between"}
+      height={"max-content"}
+      align={"center"}
+    >
       <StyledText line={"24px"} size={"18px"} font={"Metropolis-M"}>
         Game Stats
       </StyledText>
@@ -22,7 +27,7 @@ function GameStatsHeader() {
           <StyledText line={"20px"} size={"13px"}>
             Graph
           </StyledText>
-          <StyledIcon width={"20px"} height={"20px"} src={arrowDownIcon}/>
+          <StyledIcon width={"20px"} height={"20px"} src={arrowDownIcon} />
         </Flex>
       </Flex>
     </Flex>

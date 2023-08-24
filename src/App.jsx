@@ -21,8 +21,8 @@ function App() {
   useEffect(() => {
     dispatch(getStatistic());
     dispatch(getChartData());
-    dispatch(getUsers())
-    dispatch(getSales())
+    dispatch(getUsers());
+    dispatch(getSales());
   }, [dispatch]);
 
   return (

@@ -6,7 +6,6 @@ import greenIcon from "../../../../../assets/images/Select-green.svg";
 import yellowIcon from "../../../../../assets/images/Select-yellow.svg";
 import violetIcon from "../../../../../assets/images/Select-violet.svg";
 
-
 function SelectArea() {
   return (
     <Flex direction={"column"} gap={"24px"} width={"24px"}>

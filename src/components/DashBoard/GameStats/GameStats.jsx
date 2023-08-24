@@ -14,18 +14,27 @@ function GameStats() {
       gap={"16px"}
       margin={"16px 0px 0px 0px"}
     >
-        <Flex direction={"column"} padding={"24px 32px 32px 32px"} background={"#242731"} radius={"4px"}>
-            <GameStatsHeader/>
-            <Flex margin={"16px 0px 0px 0px"} overflow={"hidden"} gap={"21px"}>
-                <Graph />
-                <UsersGameStats />
-            </Flex>
+      <Flex
+        direction={"column"}
+        padding={"24px 32px 32px 32px"}
+        background={"#242731"}
+        radius={"4px"}
+      >
+        <GameStatsHeader />
+        <Flex margin={"16px 0px 0px 0px"} overflow={"hidden"} gap={"21px"}>
+          <Graph />
+          <UsersGameStats />
         </Flex>
-        <Flex direction={"column"} padding={"24px 32px 32px 32px"} background={"#242731"} radius={"4px"}>
-            <GraphStatsHeader />
-            <StatsDiagram />
-        </Flex>
-        
+      </Flex>
+      <Flex
+        direction={"column"}
+        padding={"24px 32px 32px 32px"}
+        background={"#242731"}
+        radius={"4px"}
+      >
+        <GraphStatsHeader />
+        <StatsDiagram />
+      </Flex>
     </Grid>
   );
 }

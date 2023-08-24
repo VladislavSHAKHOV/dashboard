@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import Flex from "../../../Flex/Flex";
 import { StyledText } from "../../../Header/Header";
 import SelectArea from "./SelectArea/SelectArea";
@@ -60,7 +60,12 @@ function UsersGameStats() {
           </StyledText>
         </Flex>
       </Flex>
-      <Flex width={"96px"} margin={"0px 0px 0px 8px"} gap={"16px"} direction={"column"}>
+      <Flex
+        width={"96px"}
+        margin={"0px 0px 0px 8px"}
+        gap={"16px"}
+        direction={"column"}
+      >
         {isLoading ? (
           <p>Loading...</p>
         ) : Array.isArray(users) ? (

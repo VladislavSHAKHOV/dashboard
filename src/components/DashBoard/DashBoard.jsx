@@ -5,14 +5,14 @@ import GeneralSales from "./GeneralSales/GeneralSales";
 import Statistic from "./Statistic/Statistic";
 
 function DashBoard() {
-    return (
-        <Flex width={"100%"} direction={"column"} padding={"16px 48px 28px 32px"}>
-            <Header />
-            <Statistic />
-            <GameStats />
-            <GeneralSales />
-        </Flex>
-    )
+  return (
+    <Flex width={"100%"} direction={"column"} padding={"16px 48px 28px 32px"}>
+      <Header />
+      <Statistic />
+      <GameStats />
+      <GeneralSales />
+    </Flex>
+  );
 }
 
 export default DashBoard;

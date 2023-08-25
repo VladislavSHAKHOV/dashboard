@@ -5,8 +5,8 @@ export const StyledIcon = styled.img`
   width: ${(props) => props.width || "24px"};
   height: ${(props) => props.height || "24px"};
   margin: ${(props) => props.margin || "0"};
-  fill: ${(props) => props.fillColor || "black"};
-  stroke: ${(props) => props.strokeColor || "none"};
+  /* fill: ${(props) => props.fillColor || "black"};
+  stroke: ${(props) => props.strokeColor || "none"}; */
   cursor: ${(props) => props.cursor || "default"};
 `;
 

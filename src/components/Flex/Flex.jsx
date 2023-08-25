@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledFlex = styled.div`
   display: flex;
+  position: ${(props) => props.position || "static"};
   width: ${(props) => props.width || "100%"};
   height: ${(props) => props.height || "100%"};
   flex-direction: ${(props) => props.direction || "row"};
